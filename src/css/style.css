@@ -1,12 +1,12 @@
 .hello {
     color: red;
-    background-image: url(../img/aaa.png);
+    background-image: url(../img/blue_sky.png);
     font-family: 'MyFont';
   }
   @font-face {
-       font-family: 'MyFont';
-      src:  url('../font/fontawesome-webfont.woff2') format('woff2'),
-             url('../font/fontawesome-webfont.woff') format('woff');
-       font-weight: 600;
-       font-style: normal;
-     }
+      font-family: 'MyFont';
+    src:  url('../font/fontawesome-webfont.woff2') format('woff2'),
+            url('../font/fontawesome-webfont.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+    }

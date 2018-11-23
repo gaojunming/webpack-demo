@@ -1,7 +1,7 @@
 /*编译时加载 */
 import '../css/style.css';
 import $ from 'jquery';//如果只是模块名，不带有路径，那么必须有配置文件，告诉 JavaScript 引擎该模块的位置。
-import phaser from 'phaser';//import语句会执行所加载的模块，省略输入的变量名可以仅仅执行模块，不会输入任何值。多次重复执行同一句import语句，那么只会执行一次，而不会执行多次。
+import phaser from 'phaser';//import语句会执行所加载的模块，省略输入的变量名和from关键词可以仅仅执行模块，不会输入任何值。多次重复执行同一句import语句，那么只会执行一次，而不会执行多次。
 
 import {firstName, lastName, year} from './module_export_demo.js';//js后缀可省略
 console.log("import",firstName,lastName,year);
