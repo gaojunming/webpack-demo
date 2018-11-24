@@ -9,9 +9,9 @@ module.exports.config = {
         index: './js/index.js'
     },
     output: {//输出打包后的js
-        filename: 'js/[name].[hash].js',
-        path: path.resolve(__dirname, 'dist'),
-        //publicPath: 'assets/'
+        filename: 'js/[name].[hash].js',//此选项决定了每个输出 bundle 的名称。注意此选项被称为文件名，但是你还是可以使用像 "js/[name]/bundle.js" 这样的文件夹结构。
+        path: path.resolve(__dirname, 'dist'),//打包结果的输出目录
+        publicPath: '../'//对于按需加载(on-demand-load)或加载外部资源(external resources)（如图片、文件等）来说，output.publicPath 是很重要的选项。如果指定了一个错误的值，则在加载这些资源时会收到 404 错误
     },
     module: {//注意：加载json是内置支持的
         rules: [
