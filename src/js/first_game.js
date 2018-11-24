@@ -9,7 +9,7 @@ var config = {
     }
 };
 
-var game = new Phaser.Game(config);
+
 
 function preload ()//前置加载资产
 {
@@ -30,4 +30,7 @@ function create ()
 
 function update ()
 {
+}
+export default function(){
+    return new Phaser.Game(config);
 }

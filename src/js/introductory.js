@@ -13,7 +13,7 @@ var config = {
         create: create
     }
 };
-var game = new Phaser.Game(config);
+//var game = new Phaser.Game(config);
 
 function preload ()
 {
@@ -42,4 +42,7 @@ function create ()
     logo.setCollideWorldBounds(true);
 
     emitter.startFollow(logo);
+}
+export default function(){
+    return new Phaser.Game(config);
 }
